@@ -55,6 +55,7 @@ Vendors
 List/Create Vendors:
 Endpoint: /vendors/
 Methods: GET, POST
+
 Retrieve/Update/Delete Vendor:
 Endpoint: /vendors/<vendor_code>/
 Methods: GET, PUT, DELETE
@@ -67,6 +68,7 @@ Endpoint: /purchase_orders/
 Methods: GET, POST
 Retrieve/Update/Delete Purchase Order:
 Endpoint: /purchase_orders/<po_id>/
+
 Methods: GET, PUT, DELETE
 Vendor Performance Analysis
 Vendor Performance Metrics:
