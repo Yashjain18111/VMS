@@ -25,6 +25,7 @@ bash
 
 Copy code
 git clone https://github.com/Yashjain18111/VMS.git
+
 cd vms_project
 
 
@@ -36,8 +37,11 @@ pip install -r requirements.txt
 Database Setup:
 
 Configure your database settings in settings.py.
+
 Run database migrations:
+
 Copy code
+
 python manage.py migrate
 
 Run the Development Server:
@@ -45,12 +49,15 @@ Run the Development Server:
 Copy code
 
 python manage.py runserver
+
 Accessing the API:
+
 Use API endpoints to interact with the application.
+
 For authentication, generate a token using the generate-token/ endpoint.
+
 API Endpoints
 Vendors
-
 
 List/Create Vendors:
 Endpoint: /vendors/
@@ -87,7 +94,9 @@ Method: POST
 
 Technologies Used
 Django: Backend web framework
+
 Django REST Framework: Toolkit for building Web APIs
+
 SQLite: Database system
 Python: Programming language for backend development
 
