@@ -1,5 +1,5 @@
 # VMS
-Vendor Management System (VMS)
+## Vendor Management System (VMS)
 
 
 Overview
@@ -19,37 +19,45 @@ Vendor Performance Analysis: Provides API endpoints to analyze vendor performanc
 
 
 
-Setup Instructions
-Clone the Repository:
-bash
+### How to run the application.
 
-Copy code
+Step 1:
+
+* Clone the application to your local machine
+``` 
 git clone https://github.com/Yashjain18111/VMS.git
-
+```
+* Go into vms_project directory
+```
 cd vms_project
+```
+Step 2:
 
+* Create a virtual environment:
 
-Install Dependencies:
-Copy code
+``` 
+python -m venv venv
+source venv/bin/activate   # On Windows use ./venv/Scripts/activate
+```
+<br>
+Step 3:
+* Install the dependencies from the requirements file
 
+```
 pip install -r requirements.txt
-
+```
 Database Setup:
 
 Configure your database settings in settings.py.
 
 Run database migrations:
-
-Copy code
-
+```
 python manage.py migrate
-
+```
 Run the Development Server:
-
-Copy code
-
+```
 python manage.py runserver
-
+```
 Accessing the API:
 
 Use API endpoints to interact with the application.
