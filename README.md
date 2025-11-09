@@ -1,7 +1,3 @@
-# WARP.md
-
-This file provides guidance to WARP (warp.dev) when working with code in this repository.
-
 ## Project Overview
 
 Django REST Framework-based Vendor Management System (VMS) that tracks vendor performance metrics including on-time delivery, quality ratings, response times, and fulfillment rates. Uses token-based authentication for API access.
