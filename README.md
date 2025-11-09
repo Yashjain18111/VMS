@@ -146,7 +146,10 @@ Base URL: `/api/`
 - Signal handler in views.py recalculates all vendor metrics on every PurchaseOrder save
 - Missing `timezone` import in `AcknowledgePurchaseOrderAPIView` (line 113 references undefined `timezone`)
 
-**Testing Approach:**
-- Test infrastructure is in place but no tests are currently implemented
-- Use Django's TestCase framework for writing tests
-- Run tests with `python VMS\manage.py test`
+**Testing:**
+- Comprehensive test suite with 24 tests covering models, APIs, authentication, and signals
+- All tests passing with ~6 second runtime
+- Tests use Django's TestCase and DRF's APITestCase
+- Signal-driven metrics are tested by verifying automatic updates on PurchaseOrder save
+- Run tests: `python VMS\manage.py test app` (local) or `docker-compose exec web python manage.py test` (Docker)
+- See TESTING.md for detailed test documentation
